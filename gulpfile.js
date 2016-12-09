@@ -28,7 +28,7 @@ gulp.task('inject', function() {
        ignorePath: '../../public'
     };
 
-    return gulp.src('./src/views/*.html')
+    return gulp.src('./src/views/*.ejs')
         .pipe(wiredep(options))
         .pipe(inject(injectSrc, injectOptions))
         .pipe(gulp.dest('./src/views'));
@@ -39,7 +39,7 @@ gulp.task('serve', ['style', 'inject'], function() {
         script: 'app.js', // what program to run
         delayTime: 1, // how long til it runs
         env: {
-            'PORT': 3000
+            'PORT': 5000
         },
         watch: jsFiles // what files are being watched for changes?
     };
