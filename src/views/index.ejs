@@ -23,6 +23,18 @@
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		<style media="screen">
+			#login-form {
+				margin-bottom: 50px;
+			}
+			form {
+				padding: 5px;
+				padding-left: 20px;
+				padding-right: 20px;
+				border-radius: 10px;
+				box-shadow: 0px 0px 20px 5px #eee;
+			}
+		</style>
 	</head>
 	<body>
 <header class="navbar navbar-bright navbar-fixed-top" role="banner">
@@ -60,7 +72,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1>Storystrap
+        <h1>My Library
           <p class="lead"></p>
         </h1>
       </div>
@@ -100,103 +112,66 @@
 
           <!--/stories-->
           <div class="row">
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/men/58.jpg" style="width:100px;height:100px" class="img-circle"></a>
-            </div>
-            <div class="col-md-10 col-sm-9">
-              <h3>Repurpose Content to Reach a Wider Audience</h3>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4><span class="label label-default">97thfloor.com</span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted">2 hours ago  • <a href="#" class="text-muted">Read More</a></small>
-                  </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <br><br>
-            </div>
-          </div>
-          <hr>
+            <div class="col-md-offset-1 col-md-4">
 
-          <div class="row">
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/women/56.jpg" style="width:100px;height:100px" class="img-circle"></a>
+					<form class=""
+							id="login-form"
+							name="loginForm"
+							action="/auth/login"
+							method="POST">
+			         <h2 class="text-center">Login</h2>
+			         <br>
+			         <div class="form-group">
+			            <input type="text" class="form-control" placeholder="Username">
+			            <br>
+			            <input type="password" class="form-control" placeholder="Password">
+			         </div>
+						<div class="form-group">
+							<div class="text-center">
+								<button class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+			      </form>
             </div>
-            <div class="col-md-10 col-sm-9">
-              <h3>14 Useful Sites for Designers</h3>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4><span class="label label-default">devgarage.com</span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted">Yesterday • <a href="#" class="text-muted">Read More</a></small>
-                  </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <br><br>
-            </div>
-          </div>
-          <hr>
+            <div class="col-md-offset-1 col-md-5">
+					<form class="form-horizontal"
+							id="signup-form"
+							name="signupForm"
+							action="/auth/signUp"
+							method="POST">
+						<h2 class="text-center">Sign-Up</h2>
+						<br>
+					  <div class="form-group">
+					    <div class="col-sm-12">
+					      <input type="text" class="form-control" placeholder="Username" name="userName" id="userName">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <div class="col-sm-12">
+					      <input type="email" class="form-control" placeholder="Email" name="email" id="email">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <div class="col-sm-12">
+					      <input type="password" class="form-control" placeholder="Password" name="password" id="password">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <div class="col-sm-12">
+					      <input type="password" class="form-control" placeholder="Confirm Password" name="conf_password" id="conf_password">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <div class="text-center col-sm-12">
+					      <button type="submit" class="btn btn-primary">Sign Up</button>
+					    </div>
+					  </div>
+					</form>
 
-          <div class="row">
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/men/29.jpg" style="width:100px;height:100px" class="img-circle"></a>
-            </div>
-            <div class="col-md-10 col-sm-9">
-              <h3>Measuring Your Link Building with Google Analytics</h3>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4><span class="label label-default">searchenginewatch.com</span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted">Yesterday • <a href="#" class="text-muted">Read More</a></small>
-                  </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <br><br>
-            </div>
-          </div>
-          <hr>
-
-          <div class="row">
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/women/56.jpg" style="width:100px;height:100px" class="img-circle"></a>
-            </div>
-            <div class="col-md-10 col-sm-9">
-              <h3>Dramatically Raise the Value of Any Piece of Content with These 27 Tactics</h3>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4><span class="label label-default">searchenginewatch.com</span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted">2 days ago • <a href="#" class="text-muted">Read More</a></small>
-                  </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <br><br>
-            </div>
-          </div>
-          <hr>
-
-          <div class="row">
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/men/29.jpg" style="width:100px;height:100px" class="img-circle"></a>
-            </div>
-            <div class="col-md-10 col-sm-9">
-              <h3>TrendPaper - What's Trending in the World</h3>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4><span class="label label-default">betali.st</span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted">Last week • <a href="#" class="text-muted">Read More</a></small>
-                  </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <br><br>
             </div>
           </div>
           <hr>
           <!--/stories-->
-
-
-          <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
 
 
         </div>
